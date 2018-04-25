@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Minha Página</title>
+</head>
+
+<body>
+    <form method="POST" action="http://localhost:8080/form">
+
+        <fieldset>
+            <legend>Formulário de Cadastro</legend>
+            <label for="">Nome do Usuáro</label>
+            <input type="text" name="txtNomeUsuario" id="txtNome" required />
+
+            <label for="http://localhost:8080/form">Senha</label>
+            <input type="password" name="txtSenha" id="txtSenha" />
+
+            <fieldset>
+                <legend>Informe seu e-mail</legend>
+                <input type="email" name="email" placeholder="meu-email@dominio.com">
+                <input type="color" name="cor">
+                <input type="date" name="data">
+                <!--<input type="number" min="21" max="80" name="idade">-->
+                <input type="range" min="21" max="80" name="idade">
+            </fieldset>
+
+            <fieldset>
+                <legend>Informe seu gênero</legend>
+                <input type="radio" name="genero" value="masculino">Masculino</input>
+                <input type="radio" name="genero" value="feminino">Feminino</input>
+                <input type="radio" name="genero" value="não informado" checked>Prefiro não informar</input>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Escolha sua área preferida</legend>
+                <input type="checkbox" name="aulaPreferida" value="web1">Web 1</input>
+                <input type="checkbox" name="aulaPreferida" value="web2">Web 2</input>
+                <input type="checkbox" name="aulaPreferida" value="so">Sistemas Operacionais</input>
+            </fieldset>
+
+            <fieldset>
+                <legend>Submeta sua foto</legend>
+                <input type="file" name="foto" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha seu time</legend>
+                <select name=time>
+                    <option value="SãoPaulo">São Paulo</option>
+                    <option value="Corinthians">Corinthians</option>
+                    <option value="Santos">Santos</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Descreva seu problema</legend>
+                <textarea name="prblema" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <input type="button" value="Enviar Mensagem" onclick="alert('Cuidado!')" />
+
+            <input type="reset" value="Apagar dados formulário">
+            <input type="submit" value="Enviar" />
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
